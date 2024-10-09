@@ -1,82 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FLATICON ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <title>Ecommerce Website</title>
-  </head>
-  <body>
-    <div class="validate_form">
-      <form class="form" id="registerForm">
-        <p class="title">Register</p>
-        <p class="message">Signup now and get full access to our app.</p>
-        <div class="flex">
-            <label>
-                <input placeholder="Firstname" type="text" class="input" id="firstname" name="firstname">
-                <span>Firstname</span>
-            </label>
-    
-            <label>
-                <input placeholder="Lastname" type="text" class="input" id="lastname" name="lastname">
-                <span>Lastname</span>
-            </label>
-        </div>
-    
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <title>Ecommerce Website</title>
+</head>
+
+<body>
+  <div class="validate_form">
+    <form class="form" id="registerForm">
+      <p class="title">Register</p>
+      <p class="message">Signup now and get full access to our app.</p>
+      <div class="flex">
         <label>
-            <input placeholder="Email" type="email" class="input" id="email" name="email">
-            <span>Email</span>
+          <input placeholder="Firstname" type="text" class="input" id="firstname" name="firstname">
+          <span>Firstname</span>
         </label>
-    
+
         <label>
-            <input placeholder="Password" type="password" class="input" id="password" name="password">
-            <span>Password</span>
+          <input placeholder="Lastname" type="text" class="input" id="lastname" name="lastname">
+          <span>Lastname</span>
         </label>
-        <label>
-          <input  placeholder="Confirm password" type="password" class="input" id="confirmpassword" name="confirmpassword">
-          <span>Confirm password</span>
+      </div>
+
+      <label>
+        <input placeholder="Email" type="email" class="input" id="email" name="email">
+        <span>Email</span>
       </label>
-    
-        <button type="submit" class="submit">Submit</button>
+
+      <label>
+        <input placeholder="Password" type="password" class="input" id="password" name="password">
+        <span>Password</span>
+      </label>
+      <label>
+        <input placeholder="Confirm password" type="password" class="input" id="confirmpassword" name="confirmpassword">
+        <span>Confirm password</span>
+      </label>
+
+      <button type="submit" class="submit">Submit</button>
     </form>
-    
+
     <div id="validated_content" style="display:none;">
-        <p>Form has been validated and submitted successfully!</p>
-    </div>
-    
-    
+      <p>Form has been validated and submitted successfully!</p>
     </div>
 
-    <div class="validated_content">
+
+  </div>
+
+  <div class="validated_content">
     <!--=============== HEADER ===============-->
     <header class="header">
-     
+
 
       <nav class="nav container">
         <a href="index.html" class="nav__logo">
-          <img
-            class="nav__logo-img"
-            src="assets/img/logo.png"
-            alt="website logo"
-          />
+          <img class="nav__logo-img" src="assets/img/logo.png" alt="website logo" />
         </a>
         <div class="nav__menu" id="nav-menu">
           <div class="nav__menu-top">
@@ -105,11 +98,7 @@
             </li>
           </ul>
           <div class="header__search">
-            <input
-              type="text"
-              placeholder="Search For Items..."
-              class="form__input"
-            />
+            <input type="text" placeholder="Search For Items..." class="form__input" />
             <button class="search__btn">
               <img src="assets/img/search.png" alt="search icon" />
             </button>
@@ -157,67 +146,35 @@
         <div class="categories__container swiper">
           <div class="swiper-wrapper">
             <a href="shop.html" class="category__item swiper-slide">
-              <img
-                src="assets/img/category-1.jpg"
-                alt=""
-                class="category__img"
-              />
+              <img src="assets/img/category-1.jpg" alt="" class="category__img" />
               <h3 class="category__title">T-Shirt</h3>
             </a>
             <a href="shop.html" class="category__item swiper-slide">
-              <img
-                src="assets/img/category-2.jpg"
-                alt=""
-                class="category__img"
-              />
+              <img src="assets/img/category-2.jpg" alt="" class="category__img" />
               <h3 class="category__title">Bags</h3>
             </a>
             <a href="shop.html" class="category__item swiper-slide">
-              <img
-                src="assets/img/category-3.jpg"
-                alt=""
-                class="category__img"
-              />
+              <img src="assets/img/category-3.jpg" alt="" class="category__img" />
               <h3 class="category__title">Sandal</h3>
             </a>
             <a href="shop.html" class="category__item swiper-slide">
-              <img
-                src="assets/img/category-4.jpg"
-                alt=""
-                class="category__img"
-              />
+              <img src="assets/img/category-4.jpg" alt="" class="category__img" />
               <h3 class="category__title">Scarf Cap</h3>
             </a>
             <a href="shop.html" class="category__item swiper-slide">
-              <img
-                src="assets/img/category-5.jpg"
-                alt=""
-                class="category__img"
-              />
+              <img src="assets/img/category-5.jpg" alt="" class="category__img" />
               <h3 class="category__title">Shoes</h3>
             </a>
             <a href="shop.html" class="category__item swiper-slide">
-              <img
-                src="assets/img/category-6.jpg"
-                alt=""
-                class="category__img"
-              />
+              <img src="assets/img/category-6.jpg" alt="" class="category__img" />
               <h3 class="category__title">Pillowcase</h3>
             </a>
             <a href="shop.html" class="category__item swiper-slide">
-              <img
-                src="assets/img/category-7.jpg"
-                alt=""
-                class="category__img"
-              />
+              <img src="assets/img/category-7.jpg" alt="" class="category__img" />
               <h3 class="category__title">Jumpsuit</h3>
             </a>
             <a href="shop.html" class="category__item swiper-slide">
-              <img
-                src="assets/img/category-8.jpg"
-                alt=""
-                class="category__img"
-              />
+              <img src="assets/img/category-8.jpg" alt="" class="category__img" />
               <h3 class="category__title">Hats</h3>
             </a>
           </div>
@@ -234,447 +191,337 @@
       <!--=============== PRODUCTS ===============-->
       <section class="products container section">
         <div class="tab__btns">
-          <span class="tab__btn active-tab" data-target="#featured"
-            >Featured</span
-          >
+          <span class="tab__btn active-tab" data-target="#featured">Featured</span>
           <span class="tab__btn" data-target="#popular" style="pointer-events: none;">Popular</span>
           <span class="tab__btn" data-target="#new-added" style="pointer-events: none;">New Added</span>
 
           <div class="shop_header_div_index">
             <span id="listview"><i class="bi bi-list-ul"></i></span>
-            
+
             <span id="gridview">
               <i class="bi bi-grid"></i>
             </span>
           </div>
         </div>
-       
+
 
         <div class="tab__items">
           <div class="tab__item active-tab" content id="featured">
             <div class="products_container list_view">
-          
+
               <div class="list_view_product">
                 <div><a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-1-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-1-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
-                </a></div>
-                
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle"></i>
-                    </a>
-                  </div>
-                
-                  <div class="product__badge light-pink">Hot</div>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
-                  </div>
+                    <img src="assets/img/product-1-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-1-2.jpg" alt="" class="product__img hover" />
+                  </a></div>
+
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product__badge light-pink">Hot</div>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price">
+                  <span class="new__price">$238.85</span>
+                  <span class="old__price">$245.8</span>
+                </div>
                 <div class="cart_icon">
-                 
+
                   <i class="fi fi-rs-shopping-bag-add"></i>
-                
+
                 </div>
               </div>
-    
+
               <div class="list_view_product">
                 <div><a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-2-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-2-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
-                </a></div>
-                
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle"></i>
-                    </a>
-                  </div>
-                
-                  <div class="product__badge light-green">Hot</div>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
-                  </div>
+                    <img src="assets/img/product-2-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-2-2.jpg" alt="" class="product__img hover" />
+                  </a></div>
+
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product__badge light-green">Hot</div>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price">
+                  <span class="new__price">$238.85</span>
+                  <span class="old__price">$245.8</span>
+                </div>
                 <div class="cart_icon">
-                 
+
                   <i class="fi fi-rs-shopping-bag-add"></i>
-                
+
                 </div>
               </div>
               <div class="list_view_product">
                 <div><a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-3-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-3-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
-                </a></div>
-                
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle"></i>
-                    </a>
-                  </div>
-                
-                  <div class="product__badge light-orange">Hot</div>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
-                  </div>
+                    <img src="assets/img/product-3-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-3-2.jpg" alt="" class="product__img hover" />
+                  </a></div>
+
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product__badge light-orange">Hot</div>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price">
+                  <span class="new__price">$238.85</span>
+                  <span class="old__price">$245.8</span>
+                </div>
                 <div class="cart_icon">
-                 
+
                   <i class="fi fi-rs-shopping-bag-add"></i>
-                
+
                 </div>
               </div>
-    
+
               <div class="list_view_product">
                 <div><a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-4-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-4-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
-                </a></div>
-                
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle"></i>
-                    </a>
-                  </div>
-                
-                  <div class="product__badge light-blue">Hot</div>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
-                  </div>
+                    <img src="assets/img/product-4-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-4-2.jpg" alt="" class="product__img hover" />
+                  </a></div>
+
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product__badge light-blue">Hot</div>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price">
+                  <span class="new__price">$238.85</span>
+                  <span class="old__price">$245.8</span>
+                </div>
                 <div class="cart_icon">
-                 
+
                   <i class="fi fi-rs-shopping-bag-add"></i>
-                
+
                 </div>
               </div>
-    
+
               <div class="list_view_product">
                 <div><a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-5-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-5-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
-                </a></div>
-                
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle"></i>
-                    </a>
-                  </div>
-                
-                  <div class="product__badge light-pink">-30%</div>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
-                  </div>
+                    <img src="assets/img/product-5-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-5-2.jpg" alt="" class="product__img hover" />
+                  </a></div>
+
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product__badge light-pink">-30%</div>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price">
+                  <span class="new__price">$238.85</span>
+                  <span class="old__price">$245.8</span>
+                </div>
                 <div class="cart_icon">
-                 
+
                   <i class="fi fi-rs-shopping-bag-add"></i>
-                
+
                 </div>
               </div>
-    
+
               <div class="list_view_product">
                 <div><a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-6-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-6-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
-                </a></div>
-                
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle"></i>
-                    </a>
-                  </div>
-                
-                  <div class="product__badge light-pink">-22%</div>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
-                  </div>
+                    <img src="assets/img/product-6-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-6-2.jpg" alt="" class="product__img hover" />
+                  </a></div>
+
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product__badge light-pink">-22%</div>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price">
+                  <span class="new__price">$238.85</span>
+                  <span class="old__price">$245.8</span>
+                </div>
                 <div class="cart_icon">
-                 
+
                   <i class="fi fi-rs-shopping-bag-add"></i>
-                
+
                 </div>
               </div>
-    
+
               <div class="list_view_product">
                 <div><a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-7-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-7-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
-                </a></div>
-                
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle"></i>
-                    </a>
-                  </div>
-                
-                  <div class="product__badge light-pink">-30%</div>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
-                  </div>
+                    <img src="assets/img/product-7-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-7-2.jpg" alt="" class="product__img hover" />
+                  </a></div>
+
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product__badge light-pink">-30%</div>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price">
+                  <span class="new__price">$238.85</span>
+                  <span class="old__price">$245.8</span>
+                </div>
                 <div class="cart_icon">
-                 
+
                   <i class="fi fi-rs-shopping-bag-add"></i>
-                
+
                 </div>
               </div>
-    
+
               <div class="list_view_product">
                 <div><a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-8-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-8-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
-                </a></div>
-                
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle"></i>
-                    </a>
-                  </div>
-                
-                  <div class="product__badge light-pink">-22%</div>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
-                  </div>
+                    <img src="assets/img/product-8-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-8-2.jpg" alt="" class="product__img hover" />
+                  </a></div>
+
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product__badge light-pink">-22%</div>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price">
+                  <span class="new__price">$238.85</span>
+                  <span class="old__price">$245.8</span>
+                </div>
                 <div class="cart_icon">
-                 
+
                   <i class="fi fi-rs-shopping-bag-add"></i>
-                
+
                 </div>
               </div>
-    
-             
-    
-              
-    
+
+
+
+
+
             </div>
 
             <div class="products__container grid">
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-1-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-1-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-1-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-1-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -699,11 +546,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -711,26 +554,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-2-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-2-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-2-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-2-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -755,11 +586,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -767,26 +594,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-3-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-3-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-3-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-3-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -811,11 +626,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -823,26 +634,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-4-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-4-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-4-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-4-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -867,11 +666,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -879,26 +674,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-5-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-5-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-5-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-5-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -923,11 +706,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -935,26 +714,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-6-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-6-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-6-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-6-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -979,11 +746,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -991,26 +754,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-7-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-7-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-7-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-7-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1035,11 +786,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1047,26 +794,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-8-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-8-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-8-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-8-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1090,11 +825,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1106,26 +837,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-9-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-9-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-9-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-9-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1150,11 +869,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1162,26 +877,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-2-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-2-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-2-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-2-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1206,11 +909,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1218,26 +917,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-10-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-10-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-10-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-10-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1262,11 +949,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1274,26 +957,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-4-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-4-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-4-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-4-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1318,11 +989,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1330,26 +997,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-5-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-5-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-5-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-5-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1374,11 +1029,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1386,26 +1037,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-11-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-11-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-11-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-11-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1430,11 +1069,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1442,26 +1077,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-7-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-7-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-7-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-7-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1486,11 +1109,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1498,26 +1117,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-8-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-8-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-8-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-8-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1541,11 +1148,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1557,26 +1160,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-1-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-1-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-1-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-1-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1601,11 +1192,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1613,26 +1200,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-12-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-12-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-12-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-12-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1657,11 +1232,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1669,26 +1240,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-13-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-13-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-13-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-13-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1713,11 +1272,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1725,26 +1280,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-4-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-4-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-4-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-4-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1769,11 +1312,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1781,26 +1320,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-10-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-10-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-10-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-10-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1825,11 +1352,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1837,26 +1360,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-6-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-6-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-6-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-6-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1881,11 +1392,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1893,26 +1400,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-9-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-9-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-9-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-9-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1937,11 +1432,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -1949,26 +1440,14 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.html" class="product__images">
-                    <img
-                      src="assets/img/product-8-1.jpg"
-                      alt=""
-                      class="product__img default"
-                    />
-                    <img
-                      src="assets/img/product-8-2.jpg"
-                      alt=""
-                      class="product__img hover"
-                    />
+                    <img src="assets/img/product-8-1.jpg" alt="" class="product__img default" />
+                    <img src="assets/img/product-8-2.jpg" alt="" class="product__img hover" />
                   </a>
                   <div class="product__actions">
                     <a href="#" class="action__btn" aria-label="Quick View">
                       <i class="fi fi-rs-eye"></i>
                     </a>
-                    <a
-                      href="#"
-                      class="action__btn"
-                      aria-label="Add to Wishlist"
-                    >
+                    <a href="#" class="action__btn" aria-label="Add to Wishlist">
                       <i class="fi fi-rs-heart"></i>
                     </a>
                     <a href="#" class="action__btn" aria-label="Compare">
@@ -1992,11 +1471,7 @@
                     <span class="new__price">$238.85</span>
                     <span class="old__price">$245.8</span>
                   </div>
-                  <a
-                    href="#"
-                    class="action__btn cart__btn"
-                    aria-label="Add To Cart"
-                  >
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                     <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
@@ -2090,16 +1565,8 @@
             <div class="product__item swiper-slide">
               <div class="product__banner">
                 <a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-1-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-1-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
+                  <img src="assets/img/product-1-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/img/product-1-2.jpg" alt="" class="product__img hover" />
                 </a>
                 <div class="product__actions">
                   <a href="#" class="action__btn" aria-label="Quick View">
@@ -2130,11 +1597,7 @@
                   <span class="new__price">$238.85</span>
                   <span class="old__price">$245.8</span>
                 </div>
-                <a
-                  href="#"
-                  class="action__btn cart__btn"
-                  aria-label="Add To Cart"
-                >
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                   <i class="fi fi-rs-shopping-bag-add"></i>
                 </a>
               </div>
@@ -2142,16 +1605,8 @@
             <div class="product__item swiper-slide">
               <div class="product__banner">
                 <a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-2-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-2-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
+                  <img src="assets/img/product-2-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/img/product-2-2.jpg" alt="" class="product__img hover" />
                 </a>
                 <div class="product__actions">
                   <a href="#" class="action__btn" aria-label="Quick View">
@@ -2182,11 +1637,7 @@
                   <span class="new__price">$238.85</span>
                   <span class="old__price">$245.8</span>
                 </div>
-                <a
-                  href="#"
-                  class="action__btn cart__btn"
-                  aria-label="Add To Cart"
-                >
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                   <i class="fi fi-rs-shopping-bag-add"></i>
                 </a>
               </div>
@@ -2194,16 +1645,8 @@
             <div class="product__item swiper-slide">
               <div class="product__banner">
                 <a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-3-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-3-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
+                  <img src="assets/img/product-3-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/img/product-3-2.jpg" alt="" class="product__img hover" />
                 </a>
                 <div class="product__actions">
                   <a href="#" class="action__btn" aria-label="Quick View">
@@ -2234,11 +1677,7 @@
                   <span class="new__price">$238.85</span>
                   <span class="old__price">$245.8</span>
                 </div>
-                <a
-                  href="#"
-                  class="action__btn cart__btn"
-                  aria-label="Add To Cart"
-                >
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                   <i class="fi fi-rs-shopping-bag-add"></i>
                 </a>
               </div>
@@ -2246,16 +1685,8 @@
             <div class="product__item swiper-slide">
               <div class="product__banner">
                 <a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-4-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-4-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
+                  <img src="assets/img/product-4-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/img/product-4-2.jpg" alt="" class="product__img hover" />
                 </a>
                 <div class="product__actions">
                   <a href="#" class="action__btn" aria-label="Quick View">
@@ -2286,11 +1717,7 @@
                   <span class="new__price">$238.85</span>
                   <span class="old__price">$245.8</span>
                 </div>
-                <a
-                  href="#"
-                  class="action__btn cart__btn"
-                  aria-label="Add To Cart"
-                >
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                   <i class="fi fi-rs-shopping-bag-add"></i>
                 </a>
               </div>
@@ -2298,16 +1725,8 @@
             <div class="product__item swiper-slide">
               <div class="product__banner">
                 <a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-5-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-5-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
+                  <img src="assets/img/product-5-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/img/product-5-2.jpg" alt="" class="product__img hover" />
                 </a>
                 <div class="product__actions">
                   <a href="#" class="action__btn" aria-label="Quick View">
@@ -2338,11 +1757,7 @@
                   <span class="new__price">$238.85</span>
                   <span class="old__price">$245.8</span>
                 </div>
-                <a
-                  href="#"
-                  class="action__btn cart__btn"
-                  aria-label="Add To Cart"
-                >
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                   <i class="fi fi-rs-shopping-bag-add"></i>
                 </a>
               </div>
@@ -2350,16 +1765,8 @@
             <div class="product__item swiper-slide">
               <div class="product__banner">
                 <a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-6-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-6-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
+                  <img src="assets/img/product-6-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/img/product-6-2.jpg" alt="" class="product__img hover" />
                 </a>
                 <div class="product__actions">
                   <a href="#" class="action__btn" aria-label="Quick View">
@@ -2390,11 +1797,7 @@
                   <span class="new__price">$238.85</span>
                   <span class="old__price">$245.8</span>
                 </div>
-                <a
-                  href="#"
-                  class="action__btn cart__btn"
-                  aria-label="Add To Cart"
-                >
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                   <i class="fi fi-rs-shopping-bag-add"></i>
                 </a>
               </div>
@@ -2402,16 +1805,8 @@
             <div class="product__item swiper-slide">
               <div class="product__banner">
                 <a href="details.html" class="product__images">
-                  <img
-                    src="assets/img/product-7-1.jpg"
-                    alt=""
-                    class="product__img default"
-                  />
-                  <img
-                    src="assets/img/product-7-2.jpg"
-                    alt=""
-                    class="product__img hover"
-                  />
+                  <img src="assets/img/product-7-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/img/product-7-2.jpg" alt="" class="product__img hover" />
                 </a>
                 <div class="product__actions">
                   <a href="#" class="action__btn" aria-label="Quick View">
@@ -2442,11 +1837,7 @@
                   <span class="new__price">$238.85</span>
                   <span class="old__price">$245.8</span>
                 </div>
-                <a
-                  href="#"
-                  class="action__btn cart__btn"
-                  aria-label="Add To Cart"
-                >
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
                   <i class="fi fi-rs-shopping-bag-add"></i>
                 </a>
               </div>
@@ -2469,11 +1860,7 @@
             <h3 class="section__title">Hot Releases</h3>
             <div class="showcase__item">
               <a href="details.html" class="showcase__img-box">
-                <img
-                  src="./assets/img/showcase-img-1.jpg"
-                  alt=""
-                  class="showcase__img"
-                />
+                <img src="./assets/img/showcase-img-1.jpg" alt="" class="showcase__img" />
               </a>
               <div class="showcase__content">
                 <a href="details.html">
@@ -2489,11 +1876,7 @@
             </div>
             <div class="showcase__item">
               <a href="details.html" class="showcase__img-box">
-                <img
-                  src="./assets/img/showcase-img-2.jpg"
-                  alt=""
-                  class="showcase__img"
-                />
+                <img src="./assets/img/showcase-img-2.jpg" alt="" class="showcase__img" />
               </a>
               <div class="showcase__content">
                 <a href="details.html">
@@ -2509,11 +1892,7 @@
             </div>
             <div class="showcase__item">
               <a href="details.html" class="showcase__img-box">
-                <img
-                  src="./assets/img/showcase-img-3.jpg"
-                  alt=""
-                  class="showcase__img"
-                />
+                <img src="./assets/img/showcase-img-3.jpg" alt="" class="showcase__img" />
               </a>
               <div class="showcase__content">
                 <a href="details.html">
@@ -2532,11 +1911,7 @@
             <h3 class="section__title">Deals & Outlet</h3>
             <div class="showcase__item">
               <a href="details.html" class="showcase__img-box">
-                <img
-                  src="./assets/img/showcase-img-4.jpg"
-                  alt=""
-                  class="showcase__img"
-                />
+                <img src="./assets/img/showcase-img-4.jpg" alt="" class="showcase__img" />
               </a>
               <div class="showcase__content">
                 <a href="details.html">
@@ -2550,11 +1925,7 @@
             </div>
             <div class="showcase__item">
               <a href="details.html" class="showcase__img-box">
-                <img
-                  src="./assets/img/showcase-img-5.jpg"
-                  alt=""
-                  class="showcase__img"
-                />
+                <img src="./assets/img/showcase-img-5.jpg" alt="" class="showcase__img" />
               </a>
               <div class="showcase__content">
                 <a href="details.html">
@@ -2568,11 +1939,7 @@
             </div>
             <div class="showcase__item">
               <a href="details.html" class="showcase__img-box">
-                <img
-                  src="./assets/img/showcase-img-6.jpg"
-                  alt=""
-                  class="showcase__img"
-                />
+                <img src="./assets/img/showcase-img-6.jpg" alt="" class="showcase__img" />
               </a>
               <div class="showcase__content">
                 <a href="details.html">
@@ -2591,11 +1958,7 @@
             <h3 class="section__title">Top Selling</h3>
             <div class="showcase__item">
               <a href="details.html" class="showcase__img-box">
-                <img
-                  src="./assets/img/showcase-img-7.jpg"
-                  alt=""
-                  class="showcase__img"
-                />
+                <img src="./assets/img/showcase-img-7.jpg" alt="" class="showcase__img" />
               </a>
               <div class="showcase__content">
                 <a href="details.html">
@@ -2611,11 +1974,7 @@
             </div>
             <div class="showcase__item">
               <a href="details.html" class="showcase__img-box">
-                <img
-                  src="./assets/img/showcase-img-8.jpg"
-                  alt=""
-                  class="showcase__img"
-                />
+                <img src="./assets/img/showcase-img-8.jpg" alt="" class="showcase__img" />
               </a>
               <div class="showcase__content">
                 <a href="details.html">
@@ -2629,11 +1988,7 @@
             </div>
             <div class="showcase__item">
               <a href="details.html" class="showcase__img-box">
-                <img
-                  src="./assets/img/showcase-img-9.jpg"
-                  alt=""
-                  class="showcase__img"
-                />
+                <img src="./assets/img/showcase-img-9.jpg" alt="" class="showcase__img" />
               </a>
               <div class="showcase__content">
                 <a href="details.html">
@@ -2652,11 +2007,7 @@
             <h3 class="section__title">Trendy</h3>
             <div class="showcase__item">
               <a href="details.html" class="showcase__img-box">
-                <img
-                  src="./assets/img/showcase-img-7.jpg"
-                  alt=""
-                  class="showcase__img"
-                />
+                <img src="./assets/img/showcase-img-7.jpg" alt="" class="showcase__img" />
               </a>
               <div class="showcase__content">
                 <a href="details.html">
@@ -2670,11 +2021,7 @@
             </div>
             <div class="showcase__item">
               <a href="details.html" class="showcase__img-box">
-                <img
-                  src="./assets/img/showcase-img-8.jpg"
-                  alt=""
-                  class="showcase__img"
-                />
+                <img src="./assets/img/showcase-img-8.jpg" alt="" class="showcase__img" />
               </a>
               <div class="showcase__content">
                 <a href="details.html">
@@ -2688,11 +2035,7 @@
             </div>
             <div class="showcase__item">
               <a href="details.html" class="showcase__img-box">
-                <img
-                  src="./assets/img/showcase-img-9.jpg"
-                  alt=""
-                  class="showcase__img"
-                />
+                <img src="./assets/img/showcase-img-9.jpg" alt="" class="showcase__img" />
               </a>
               <div class="showcase__content">
                 <a href="details.html">
@@ -2708,7 +2051,7 @@
         </div>
       </section>
 
-     
+
     </main>
 
     <!--=============== FOOTER ===============-->
@@ -2732,39 +2075,19 @@
             <h4 class="footer__subtitle">Follow Me</h4>
             <div class="footer__links flex">
               <a href="#">
-                <img
-                  src="./assets/img/icon-facebook.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
               </a>
               <a href="#">
-                <img
-                  src="./assets/img/icon-twitter.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-twitter.svg" alt="" class="footer__social-icon" />
               </a>
               <a href="#">
-                <img
-                  src="./assets/img/icon-instagram.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
               </a>
               <a href="#">
-                <img
-                  src="./assets/img/icon-pinterest.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-pinterest.svg" alt="" class="footer__social-icon" />
               </a>
               <a href="#">
-                <img
-                  src="./assets/img/icon-youtube.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
               </a>
             </div>
           </div>
@@ -2793,11 +2116,7 @@
         </div>
         <div class="footer__content">
           <h3 class="footer__title">Secured Payed Gateways</h3>
-          <img
-            src="./assets/img/payment-method.png"
-            alt=""
-            class="payment__img"
-          />
+          <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
         </div>
       </div>
       <div class="footer__bottom">
@@ -2806,10 +2125,11 @@
       </div>
     </footer>
   </div>
-    <!--=============== SWIPER JS ===============-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!--=============== SWIPER JS ===============-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
-  </body>
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>

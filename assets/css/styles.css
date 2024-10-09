@@ -1412,9 +1412,6 @@ table {
 }
 .shop_header_div div span:last-child i, .shop_header_div_index span:last-child i{
   font-size: 20px;
-}{
-  display: flex;
-  gap: 10px;
 }
 .shop_header_div div span{
   cursor: pointer;
